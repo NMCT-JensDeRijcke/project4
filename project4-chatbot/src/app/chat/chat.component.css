@@ -1,0 +1,61 @@
+/* .app-chat{
+    margin-left: 170px;
+    
+} */
+
+.chat-chatzone{
+    margin: 10px;
+    margin-bottom: 90px;
+}
+
+.chat-chatzone-messageBot, .chat-chatzone-messageUser{
+    border-radius: 20px;
+    padding: 8px 10px;
+    margin: 5px;
+}
+
+.chat-chatzone-messageBot{
+    background-color: #cfcfcf;
+    float: left;
+}
+
+.chat-chatzone-messageUser{
+    background-color: #8bb2ff;
+    float: right;
+
+}
+
+.chat-chatzone-space{
+    clear: both;
+}
+
+/* ACTIONS */
+app-action{
+    position: fixed;
+    bottom: 40px;
+}
+
+/* INPUT MESSAGE */
+.chat-messagezone{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #dfdfdf;
+
+}
+
+.chat-messagezone-message{
+    width: calc(100% - 60px);
+    height: 30px;
+    margin: 4px 0 0 10px;
+    border: 0;
+    border-radius: 100px;
+}
+
+.chat-messagezone-button{
+    position: fixed;
+    right: 0;
+    width: 24px;
+    padding: 8px 10px 0 0;
+}

@@ -1,0 +1,36 @@
+<div class="app-chat">
+
+  <div class="chat-chatzone">
+    <!-- <div class="chat-chatzone-bot message">message bot1</div>
+    <div class="chat-chatzone-space"></div>
+    <div class="chat-chatzone-user message">message user</div>
+    <div class="chat-chatzone-space"></div>
+    <div class="chat-chatzone-bot message">message bot2</div>
+    <div class="chat-chatzone-space"></div> -->
+    
+    <ul>
+      <li *ngFor="let message of messages">
+        <div *ngIf="message.sender === 'user'; else bot">
+          <div class="chat-chatzone-messageUser">{{message.value}}</div>
+          <div class="chat-chatzone-space"></div>
+        </div>
+        <ng-template #bot>
+          <div>
+            <div class="chat-chatzone-messageBot">{{message.value}}</div>
+            <div class="chat-chatzone-space"></div>
+          </div>
+        </ng-template>
+      </li>
+    </ul>
+    <app-carousel></app-carousel>
+  </div>
+  
+  <div class="chat-messagezone">
+
+    <input #newMessage class="chat-messagezone-message" type="text">
+    <input (click)="onSendMessage(newMessage.value); newMessage.value = ''" class="chat-messagezone-button" type="image" src="assets/img/send-button.png">
+  </div>
+  <app-action></app-action>
+
+</div>
+ 

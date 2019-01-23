@@ -1,0 +1,15 @@
+<!-- 
+  img
+  title
+  time
+  book tickets
+ -->
+<div *ngIf="carousels.length > 0">
+    <img class="carousel-img" src="{{carousels[currentSelectedCarousel].imgUrl}}" alt="">
+    <div class="carousel-title">{{carousels[currentSelectedCarousel].title}}</div>
+    <div class="carousel-time">{{carousels[currentSelectedCarousel].subtitle}}</div>
+    <!-- <div>{{carousel.text}}</div> -->
+    <button *ngIf="carousels.length > 1" (click)="previousClicked()">previous</button>
+    <button (click)="btnBuyClicked(carousels[currentSelectedCarousel].btnUrl)">buy it now!</button>
+    <button *ngIf="carousels.length > 1" (click)="nextClicked()">next</button>
+</div>

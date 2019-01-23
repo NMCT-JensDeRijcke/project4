@@ -1,0 +1,3 @@
+<div>
+  <button #actionBtn (click)="chatComponent.onSendMessage(action.value);" *ngFor="let action of chatbotService.actions" class="action-btn">{{action.value}}</button>
+</div>
