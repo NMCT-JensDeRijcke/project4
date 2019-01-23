@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Action } from '../action';
 import { ChatbotService } from '../chatbot.service';
 import { ChatComponent } from '../chat/chat.component';
 
@@ -16,7 +15,4 @@ export class ActionComponent implements OnInit {
 
   ngOnInit() {
   }
-
-
-
 }

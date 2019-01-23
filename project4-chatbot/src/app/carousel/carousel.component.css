@@ -1,15 +1,18 @@
+.carousel{
+    margin-left: 5px;
+    width: 80vw;
+}
+
 .carousel-img{
-    border-top-right-radius: 14px;
+    object-fit: cover;
     border-top-left-radius: 14px;
-    max-width: 100%;
+    border-top-right-radius: 14px;
+    width: 100%;
+    height: 220px;
 }
 
 p{
     margin: 4px 0;
-}
-
-.carousel{
-    width: 90vw;
 }
 
 .carousel-title, .carousel-time{
@@ -24,7 +27,7 @@ button{
 
 button:active{
     position:relative;
-	top:1px;
+	top: 1px;
 }
 
 button:disabled{

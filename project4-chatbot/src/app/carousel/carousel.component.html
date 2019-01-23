@@ -1,15 +1,8 @@
-<!-- 
-  img
-  title
-  time
-  book tickets
- -->
 <div class="carousel" *ngIf="chatbotService.carousels.length > 0">
-    <img class="carousel-img" src="{{chatbotService.carousels[currentSelectedCarousel].imgUrl}}" alt="">
+    <img class="carousel-img" [src]="chatbotService.carousels[currentSelectedCarousel].imgUrl || 'https://cdn.reshift.nl/media/media/thumbnails/640x360/2018072409151314969541241192/ticketmaster-logo.jpg'" alt="">
     <p class="carousel-title">{{chatbotService.carousels[currentSelectedCarousel].title}}</p>
     <p class="carousel-time">{{chatbotService.carousels[currentSelectedCarousel].subtitle}}</p>
-    <!-- <div>{{carousel.text}}</div> -->
-    <button class="carousel-btnPrevious" *ngIf="chatbotService.carousels.length > 1" [disabled]="currentSelectedCarousel == 0" (click)="previousClicked()">previous</button>
+    <button class="carousel-btnPrevious" [disabled]="currentSelectedCarousel == 0" (click)="previousClicked()">previous</button>
     <button class="carousel-btnBuy" (click)="btnBuyClicked(chatbotService.carousels[currentSelectedCarousel].btnUrl)">buy it now!</button>
-    <button class="carousel-btnNext" *ngIf="chatbotService.carousels.length > 1" [disabled]="currentSelectedCarousel == chatbotService.carousels.length -1" (click)="nextClicked()">next</button>
+    <button class="carousel-btnNext" [disabled]="currentSelectedCarousel == chatbotService.carousels.length -1" (click)="nextClicked()">next</button>
 </div>

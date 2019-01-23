@@ -19,7 +19,6 @@ export class CarouselComponent implements OnInit {
 
   previousClicked(){
     this.currentSelectedCarousel--
-    
   }
   
   nextClicked(){

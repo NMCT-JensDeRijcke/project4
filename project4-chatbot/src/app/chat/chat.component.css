@@ -1,18 +1,13 @@
-/* .app-chat{
-    margin-left: 170px;
-    
-} */
-
 .chat-chatzone{
     margin: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .chat-chatzone-messageBot, .chat-chatzone-messageUser{
     border-radius: 20px;
     padding: 8px 10px;
     margin: 5px;
-    max-width: 70vw;
+    max-width: 75vw;
 }
 
 .chat-chatzone-messageBot{
@@ -23,7 +18,6 @@
 .chat-chatzone-messageUser{
     background-color: #8bb2ff;
     float: right;
-
 }
 
 .chat-chatzone-space{
@@ -39,6 +33,7 @@ app-action{
     position: fixed;
     bottom: 40px;
     height: 80px;
+    margin: 0 8px;
 }
 
 /* INPUT MESSAGE */
@@ -48,7 +43,6 @@ app-action{
     width: 100%;
     height: 40px;
     background-color: #dfdfdf;
-
 }
 
 .chat-messagezone-message{
@@ -64,7 +58,7 @@ app-action{
     position: fixed;
     right: 0;
     width: 24px;
-    padding: 8px 10px 0 0;
+    padding: 8px 10px;
 }
 
 .chat-messagezone-message, .chat-messagezone-button{

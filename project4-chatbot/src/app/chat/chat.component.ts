@@ -10,7 +10,6 @@ import { Action } from '../action';
 })
 export class ChatComponent implements OnInit {
   messages: Message[] = [];
-  // actions: Action[] = [];
   actionsVisible: Boolean;
   constructor(public chatbotService: ChatbotService) { }
 
@@ -32,15 +31,11 @@ export class ChatComponent implements OnInit {
         console.log(result);
         this.messages.push(result);
         window.scrollTo(0, document.body.scrollHeight);
-  
-    
       }, 4000);
   
       this.scrollDown(4200)
       
       setTimeout(() => { 
-        // console.log("STAP1: " + this.chatbotService.actions[0].title)
-  
         if (this.chatbotService.actions.length !== 0){
           this.actionsVisible = false;
         }else{
@@ -50,13 +45,10 @@ export class ChatComponent implements OnInit {
     }
   }
   
-
   scrollDown(delay: number){
     setTimeout(() => {
       window.scrollTo(0,document.body.scrollHeight);
     }, delay);
   }
-
-  
 }
 
