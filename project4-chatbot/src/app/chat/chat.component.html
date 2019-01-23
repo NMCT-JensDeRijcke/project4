@@ -27,8 +27,8 @@
   
   <div class="chat-messagezone">
 
-    <input #newMessage class="chat-messagezone-message" type="text">
-    <input (click)="onSendMessage(newMessage.value); newMessage.value = ''" class="chat-messagezone-button" type="image" src="assets/img/send-button.png">
+    <input (keydown.enter)="onSendMessage(newMessage.value); newMessage.value = ''; chatbotService.carousels = []" #newMessage class="chat-messagezone-message" type="text">
+    <input (click)="onSendMessage(newMessage.value); newMessage.value = ''; chatbotService.carousels = []" class="chat-messagezone-button" type="image" src="assets/img/send-button.png">
   </div>
   <app-action></app-action>
 

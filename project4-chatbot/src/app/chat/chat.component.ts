@@ -18,35 +18,36 @@ export class ChatComponent implements OnInit {
   }
   
   onSendMessage(newMessage: string): void {
-    
-    this.messages.push({
-      sender: "user",
-      value: newMessage
-    })
-
-    this.scrollDown(200)
-    
-    this.chatbotService.sendMessage(newMessage);
-    setTimeout(() => {
-      var result = this.chatbotService.getMessage()
-      console.log(result);
-      this.messages.push(result);
-      window.scrollTo(0, document.body.scrollHeight);
-
+    if (newMessage !== ""){
+      this.messages.push({
+        sender: "user",
+        value: newMessage
+      })
   
-    }, 4000);
-
-    this.scrollDown(4200)
+      this.scrollDown(200)
+      
+      this.chatbotService.sendMessage(newMessage);
+      setTimeout(() => {
+        var result = this.chatbotService.getMessage()
+        console.log(result);
+        this.messages.push(result);
+        window.scrollTo(0, document.body.scrollHeight);
+  
     
-    setTimeout(() => { 
-      // console.log("STAP1: " + this.chatbotService.actions[0].title)
-
-      if (this.chatbotService.actions.length !== 0){
-        this.actionsVisible = false;
-      }else{
-        this.actionsVisible = true;
-      }
-    }, 4200);
+      }, 4000);
+  
+      this.scrollDown(4200)
+      
+      setTimeout(() => { 
+        // console.log("STAP1: " + this.chatbotService.actions[0].title)
+  
+        if (this.chatbotService.actions.length !== 0){
+          this.actionsVisible = false;
+        }else{
+          this.actionsVisible = true;
+        }
+      }, 4200);
+    }
   }
   
 

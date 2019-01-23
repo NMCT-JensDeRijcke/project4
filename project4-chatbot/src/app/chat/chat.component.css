@@ -5,13 +5,14 @@
 
 .chat-chatzone{
     margin: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 .chat-chatzone-messageBot, .chat-chatzone-messageUser{
     border-radius: 20px;
     padding: 8px 10px;
     margin: 5px;
+    max-width: 70vw;
 }
 
 .chat-chatzone-messageBot{
@@ -31,8 +32,13 @@
 
 /* ACTIONS */
 app-action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
     position: fixed;
     bottom: 40px;
+    height: 80px;
 }
 
 /* INPUT MESSAGE */
@@ -48,6 +54,7 @@ app-action{
 .chat-messagezone-message{
     width: calc(100% - 60px);
     height: 30px;
+    padding-left: 4px;
     margin: 4px 0 0 10px;
     border: 0;
     border-radius: 100px;
@@ -58,4 +65,8 @@ app-action{
     right: 0;
     width: 24px;
     padding: 8px 10px 0 0;
+}
+
+.chat-messagezone-message, .chat-messagezone-button{
+    outline:none;
 }

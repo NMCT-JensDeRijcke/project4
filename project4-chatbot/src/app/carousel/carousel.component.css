@@ -1,3 +1,40 @@
 .carousel-img{
-    max-width: 90vw;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    max-width: 100%;
+}
+
+p{
+    margin: 4px 0;
+}
+
+.carousel{
+    width: 90vw;
+}
+
+.carousel-title, .carousel-time{
+    text-align: center;
+}
+
+button{
+    width: 33%;
+    border: 1px rgb(144, 144, 144) solid;
+    outline:none;
+}
+
+button:active{
+    position:relative;
+	top:1px;
+}
+
+button:disabled{
+    border: 1px rgb(177, 177, 177) solid;
+}
+
+.carousel-btnPrevious{
+    border-bottom-left-radius: 10px;
+}
+
+.carousel-btnNext{
+    border-bottom-right-radius: 10px;
 }
