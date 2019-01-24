@@ -1,9 +1,24 @@
+h1{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #343644;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #d8dbdf;
+    background-color: #eaecf0;
+}
+
 .chat-chatzone{
     margin: 10px;
+    margin-top: 65px;
     margin-bottom: 120px;
 }
 
 .chat-chatzone-messageBot, .chat-chatzone-messageUser{
+    color: #fdfdfd;
     border-radius: 20px;
     padding: 8px 10px;
     margin: 5px;
@@ -11,12 +26,12 @@
 }
 
 .chat-chatzone-messageBot{
-    background-color: #cfcfcf;
+    background-color: #418CF3;
     float: left;
 }
 
 .chat-chatzone-messageUser{
-    background-color: #8bb2ff;
+    background-color: #07A3C7;
     float: right;
 }
 
@@ -33,7 +48,7 @@ app-action{
     position: fixed;
     bottom: 40px;
     height: 80px;
-    margin: 0 8px;
+    margin: 0 10px;
 }
 
 /* INPUT MESSAGE */
@@ -41,23 +56,24 @@ app-action{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    background-color: #dfdfdf;
+    height: 41px;
+    background-color: #eaecf0;
+    border-top: 1px solid #d8dbdf;
 }
 
 .chat-messagezone-message{
-    width: calc(100% - 60px);
+    width: calc(100% - 70px);
     height: 30px;
-    padding-left: 4px;
+    padding: 0 5px;
     margin: 4px 0 0 10px;
-    border: 0;
+    border: 1px solid #d8dbdf;
     border-radius: 100px;
 }
 
 .chat-messagezone-button{
     position: fixed;
     right: 0;
-    width: 24px;
+    width: 25px;
     padding: 8px 10px;
 }
 

@@ -1,8 +1,10 @@
 .action-btn{
     width: calc(25vw - 21px);
     margin: 8px;
-    height: 55px;
+    height: 65px;
     border-radius: 10px;
-    border: 1px rgb(144, 144, 144) solid;
+    background-color: #fafafa;
+    color: #234779;
+    border: 1px #245498 solid;
     outline:none;
 }
